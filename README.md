@@ -31,6 +31,7 @@ Only a limited number of environmental features will be used.
 The model should be simple enough for a beginner-friendly prototype.
 The results may not represent real-time conditions.
 The system will not be used as an official emergency warning system.
+
 5. Success Criteria
 
 The AI model will be considered successful if it can classify flood-risk levels reasonably well on previously unseen test data.
