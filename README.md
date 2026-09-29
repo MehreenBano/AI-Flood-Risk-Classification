@@ -56,3 +56,28 @@ The evaluation results will be used to determine how well the model can classify
 7. Expected Outcome
 
 The expected outcome is a beginner-friendly AI prototype that demonstrates how environmental data can be used for flood-risk classification. This project can later be expanded with additional features and developed into a complete AI-based disaster-management application.
+## Task 2 – Model or API Integration
+
+For this task, I integrated the Open-Meteo Weather API into the flood risk classification project.
+
+The API provides current environmental data including:
+- Temperature
+- Precipitation
+- Rain
+
+The Python program sends latitude and longitude to the API and receives the current weather data. Based on precipitation and rain values, the program classifies the current flood risk as Low, Medium, or High.
+
+### Integration Flow
+
+User Location → Weather API → Environmental Data → Flood Risk Classification
+
+### Example
+
+For latitude 35.92 and longitude 74.31, the API returned:
+
+- Temperature: 20.5 °C
+- Precipitation: 0.0 mm
+- Rain: 0.0 mm
+- Flood Risk: Low
+
+This is an educational prototype and is not intended to replace official flood warnings or emergency-management systems.
