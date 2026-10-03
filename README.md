@@ -81,3 +81,15 @@ For latitude 35.92 and longitude 74.31, the API returned:
 - Flood Risk: Low
 
 This is an educational prototype and is not intended to replace official flood warnings or emergency-management systems.
+
+## Task 3 – Intelligent Feature, Error Handling and Evaluation
+
+### Intelligent Feature
+
+The prototype will be improved with an intelligent risk explanation feature.
+Instead of only displaying the flood risk level, the system will also provide a simple explanation based on the precipitation and rain values.
+
+For example:
+- Low Risk: Low precipitation and rainfall indicate lower current flood-risk conditions.
+- Medium Risk: Moderate precipitation or rainfall suggests that weather conditions should be monitored.
+- High Risk: Heavy precipitation or rainfall may indicate a higher possibility of flood risk.
