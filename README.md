@@ -93,3 +93,122 @@ For example:
 - Low Risk: Low precipitation and rainfall indicate lower current flood-risk conditions.
 - Medium Risk: Moderate precipitation or rainfall suggests that weather conditions should be monitored.
 - High Risk: Heavy precipitation or rainfall may indicate a higher possibility of flood risk.
+3.2 Error Handling
+
+The application includes input validation and error handling to improve reliability.
+
+The implemented checks include:
+
+Rejecting non-numeric latitude or longitude values.
+
+Validating latitude within -90 to 90 degrees and longitude within -180 to 180 degrees.
+
+Handling weather API timeouts and connection failures.
+
+Handling unsuccessful API requests and invalid API data.
+
+These checks help the application respond to common input and network problems without unexpected termination.
+
+3.3 Evaluation Examples
+
+The following tests were performed during development:
+
+Test
+
+Input or condition
+
+Observed result
+
+Successful API request
+
+Latitude 35.92, longitude 74.31
+
+Weather data retrieved; Low risk displayed
+
+Invalid input
+
+Latitude abc
+
+Appropriate input error displayed
+
+Invalid coordinates
+
+Latitude 100, longitude 200
+
+Latitude range error displayed
+
+The successful weather result is based on the API response at the time of testing. Results can change with weather conditions and API data.
+
+API timeout, connection failure, and invalid API-response handling are implemented in the code but should be tested separately before claiming that those failure scenarios have been verified.
+
+4. Final Application Workflow
+
+The user enters latitude and longitude.
+
+The application validates the coordinate inputs.
+
+The application requests current weather data from Open-Meteo.
+
+The available precipitation and rain values are used to classify risk.
+
+The application displays the weather information and flood-risk result.
+
+Error messages are displayed when supported failure conditions occur.
+
+5. Limitations
+
+The application uses a simple threshold-based classification approach.
+
+The displayed risk category is not a scientifically validated flood probability.
+
+Current precipitation and rain values alone cannot determine actual flood risk.
+
+The prototype does not account for every local factor, such as river levels, terrain, drainage, or soil saturation.
+
+Weather data and API availability may vary.
+
+The system has not been established as an operational flood forecasting service.
+
+6. Ethical Considerations
+
+Clearly communicate that this application is an educational prototype.
+
+Do not present its classifications as certain or authoritative flood predictions.
+
+Do not use this prototype as the sole basis for evacuation or emergency decisions.
+
+Refer users to official meteorological and disaster-management authorities for warnings.
+
+Explain the limitations of the data and classification method.
+
+7. Installation and Usage
+
+Requirements: Python 3 and the requests library.
+
+Install the dependency:
+
+python -m pip install requests
+
+Run the application from the project directory:
+
+python api_integration.py
+
+Enter valid geographic coordinates when prompted. An internet connection is required to retrieve live weather data.
+
+8. Future Improvements
+
+Add automated tests for valid and invalid inputs.
+
+Test simulated API timeout and connection failures.
+
+Evaluate classification performance using a suitable labelled dataset.
+
+Add a simple graphical interface.
+
+Incorporate additional verified environmental data.
+
+Improve the classification method through evidence-based evaluation.
+
+9. Disclaimer
+
+This application is an educational prototype and is not a replacement for official weather forecasts, flood alerts, emergency services, or professional risk assessments.
