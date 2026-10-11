@@ -93,7 +93,7 @@ For example:
 - Low Risk: Low precipitation and rainfall indicate lower current flood-risk conditions.
 - Medium Risk: Moderate precipitation or rainfall suggests that weather conditions should be monitored.
 - High Risk: Heavy precipitation or rainfall may indicate a higher possibility of flood risk.
-3.2 Error Handling
+3.2 ### Error Handling
 
 The application includes input validation and error handling to improve reliability.
 
@@ -109,7 +109,7 @@ Handling unsuccessful API requests and invalid API data.
 
 These checks help the application respond to common input and network problems without unexpected termination.
 
-3.3 Evaluation Examples
+3.3 ### Evaluation Examples
 
 The following tests were performed during development:
 
@@ -141,7 +141,7 @@ The successful weather result is based on the API response at the time of testin
 
 API timeout, connection failure, and invalid API-response handling are implemented in the code but should be tested separately before claiming that those failure scenarios have been verified.
 
-4. Final Application Workflow
+4. ### Final Application Workflow
 
 The user enters latitude and longitude.
 
@@ -155,7 +155,7 @@ The application displays the weather information and flood-risk result.
 
 Error messages are displayed when supported failure conditions occur.
 
-5. Limitations
+5. ### Limitations
 
 The application uses a simple threshold-based classification approach.
 
@@ -169,7 +169,7 @@ Weather data and API availability may vary.
 
 The system has not been established as an operational flood forecasting service.
 
-6. Ethical Considerations
+6. ### Ethical Considerations
 
 Clearly communicate that this application is an educational prototype.
 
@@ -181,7 +181,7 @@ Refer users to official meteorological and disaster-management authorities for w
 
 Explain the limitations of the data and classification method.
 
-7. Installation and Usage
+7. ### Installation and Usage
 
 Requirements: Python 3 and the requests library.
 
@@ -195,7 +195,7 @@ python api_integration.py
 
 Enter valid geographic coordinates when prompted. An internet connection is required to retrieve live weather data.
 
-8. Future Improvements
+8. ### Future Improvements
 
 Add automated tests for valid and invalid inputs.
 
@@ -209,6 +209,6 @@ Incorporate additional verified environmental data.
 
 Improve the classification method through evidence-based evaluation.
 
-9. Disclaimer
+9. ### Disclaimer
 
 This application is an educational prototype and is not a replacement for official weather forecasts, flood alerts, emergency services, or professional risk assessments.
